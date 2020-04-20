@@ -1,0 +1,6 @@
+panic: runtime error: makeslice: len out of range
+storj.io/common/peertls/extensions.(*revocationDecoder).decodeByteArray
+storj.io/common/peertls/extensions.(*revocationDecoder).decode
+storj.io/common/peertls/extensions.Fuzz
+go-fuzz-dep.Main
+main.main

@@ -1,0 +1,14 @@
+panic: runtime error: makeslice: len out of range
+
+goroutine 1 [running]:
+storj.io/common/peertls/extensions.(*revocationDecoder).decodeByteArray(0xc000147e90, 0x2, 0x0, 0x0, 0x41, 0x41)
+	f:/storj/common/peertls/extensions/gob.go:218 +0xb5
+storj.io/common/peertls/extensions.(*revocationDecoder).decode(0xc000147e90, 0x26b10000, 0x4f, 0x4f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	f:/storj/common/peertls/extensions/gob.go:157 +0x528
+storj.io/common/peertls/extensions.Fuzz(0x26b10000, 0x4f, 0x4f, 0xdfc)
+	f:/storj/common/peertls/extensions/fuzz.go:24 +0x7e
+go-fuzz-dep.Main(0xc000147f70, 0x1, 0x1)
+	go-fuzz-dep/main.go:36 +0x1b4
+main.main()
+	storj.io/common/peertls/extensions/go.fuzz.main/main.go:15 +0x59
+exit status 2
